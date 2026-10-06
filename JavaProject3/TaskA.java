@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
-public class Task15 {
+public class TaskA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        long a = sc.nextLong();
+        long b = sc.nextLong();
 
-        if (a > b) {
-            System.out.println(1);
-        } else if (b > a) {
-            System.out.println(2);
-        } el
+        for (long i = a; i <= b; i++) {
+            if (i % 2 == 0)
+                System.out.print(i + " ");
+        }
+    }
+}
